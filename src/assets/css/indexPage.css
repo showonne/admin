@@ -1,0 +1,33 @@
+.h100p{
+  height: 100%;
+  background: url('../images/iu.jpg');
+  background-size: cover;
+}
+
+.opcityBg{
+  background: rgba(255, 255, 255, .8);
+
+}
+
+.rotate{
+  animation: rotate 8s linear infinite;
+}
+
+.flexcard{
+  display: flex;
+}
+
+.textell{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}
+
+@keyframes rotate {
+  50%{
+    color: #7fa6f3;
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+}

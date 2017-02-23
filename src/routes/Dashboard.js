@@ -2,7 +2,7 @@ import { connect } from 'dva'
 import { Component } from 'react'
 import { Card, Col, Row, Icon, Table, Timeline } from 'antd'
 import { LineChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Line, PieChart, Pie, Cell } from 'recharts'
-import styles from '../index.css'
+import styles from '../assets/css/indexPage.css'
 
 const columns = [{
   title: 'Name',
@@ -74,6 +74,8 @@ class Dashboard extends Component {
         value: 1000
       }]
     }
+  }
+  componentDidMount(){
   }
   render(){
     return (

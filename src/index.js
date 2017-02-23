@@ -1,7 +1,8 @@
 import dva from 'dva'
 import { browserHistory } from 'dva/router'
-import './index.css'
+import './assets/css/index.css'
 
+browserHistory.customerProp = 'showonne'
 // 1. Initialize
 const app = dva({
   history: browserHistory
@@ -11,7 +12,7 @@ const app = dva({
 // app.use({});
 
 // 3. Model
-// app.model(require('./models/example'));
+app.model(require('./models/index'))
 
 // 4. Router
 app.router(require('./router'))
