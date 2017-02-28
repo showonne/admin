@@ -1,10 +1,14 @@
 import axios from 'axios'
 
-export async function login(data) {
+const login = async (data) => {
   return axios({
     method: 'post',
     url: '/login',
     data
   })
   .then(data => data)
+}
+
+export {
+  login
 }
